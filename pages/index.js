@@ -9,7 +9,6 @@ import utilStyles from "../styles/utils.module.css";
 // SSGの場合
 export async function getStaticProps() {
   const allPostsData = getPostsData();
-  console.log(allPostsData);
 
   return {
     props: {
@@ -45,7 +44,7 @@ export default function Home({ allPostsData }) {
           {allPostsData.map(({ id, title, date, thumbnail }) => (
             <article key={id}>
               <Link href={`/posts/${id}`}>
-                <Image
+                <img
                   className={styles.thumbnailImage}
                   src={`${thumbnail}`}
                   alt=""

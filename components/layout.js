@@ -16,7 +16,7 @@ function Layout({ children, home }) {
       <header className={styles.header}>
         {home ? (
           <>
-            <Image
+            <img
               className={`${utilStyles.borderCircle} ${styles.headerHomeImage}`}
               src="/images/profile.png"
               alt=""
@@ -25,7 +25,7 @@ function Layout({ children, home }) {
           </>
         ) : (
           <>
-            <Image
+            <img
               className={utilStyles.borderCircle}
               src="/images/profile.png"
               alt=""
